@@ -1,7 +1,106 @@
-html {
-  max-width: 720px;
+.card {
+  color: red;
 }
 
-body {
-  background: #fff;
+/* .card {
+  border: none;
+} */
+
+
+.card > p {
+  color: green;
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: 2px blue;
+}
+
+p:focus, p:active,p:hover {
+  -webkit-text-fill-color: rgba(229, 255, 0, 0.959);
+  -webkit-text-stroke: 2px rgb(255, 0, 234);
+  direction: rtl;
+}
+
+#test {
+  color: inherit;
+  -webkit-text-fill-color: initial;
+  -webkit-text-stroke: unset;
+  
+  /* writing-mode: vertical-lr; */
+  text-align: center;
+
+letter-spacing: 0.5em;  
+}
+
+span {
+  text-align: left;
+  text-transform: uppercase;
+
+  /* text-decoration: underline dotted red; */
+  /* text-decoration-color: yellowgreen; */
+  text-decoration: underline solid red;
+}
+
+span:hover {
+  text-decoration-color: yellowgreen;
+  text-decoration-line: line-through;
+  text-decoration-style: wavy;
+}
+
+
+pre {
+  tab-size: 10;
+}
+
+/* шрифти */
+* {
+  font-family: 'roboto', sans;
+  /* font-family: fantasy; */
+  font-size: 20px;
+
+  font-display: swap;
+}
+
+span {
+  /* font-size: xx-large; */
+  font-size: larger;
+
+  font-weight: lighter;
+
+  font-style: italic;
+}
+
+/* Відображення блоків */
+
+.test {
+  display: none;
+}
+
+/* .block {
+  display: block;
+} */
+
+.block {
+  /* display: inline-block; */
+  display: block;
+  background: yellow;
+  /* margin: 10px; */
+  /* margin: 20%; */
+  margin: auto;
+  /* margin-bottom: 50px; */
+ 
+  margin-left: 50px;
+  margin: auto;
+  /* width: 250px; */
+  /* width: 60%; */
+  /* width: fit-content; */
+  /* width: min-content; */
+  /* width: max-content; */
+  /* height: fit-content; */
+  
+  width: 100%;
+  
+  min-width: min-content;
+  max-width: 200px;
+
+  min-height: 100px;
+  max-height: max-content;
 }
