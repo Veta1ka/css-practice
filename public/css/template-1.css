@@ -10,6 +10,8 @@
 
 .header {
   padding: 24px;
+
+  border-bottom: 1px solid #DEE2E6;
 }
 
 .logo {
@@ -60,6 +62,7 @@
 
 .footer {
   padding: 24px 0;
+  border-top: 1px solid #DEE2E6;
 }
 
 .footer_copyright {
@@ -93,6 +96,8 @@
   text-align: center;
   max-width: 585px;
   margin: 0 auto;
+
+  line-height: 200%;
 }
 
 .plans_card:not(:last-of-type) {
@@ -123,6 +128,8 @@
 .card_price_duration {
   font-size: 29px;
   color: #6C757D;
+
+  vertical-align: top;
 }
 
 .card_block {
@@ -149,4 +156,76 @@
   width: 100%;
   font-size: 19px;
   padding: 9px;
+}
+
+/* робота з тінню */
+
+.card {
+  border: 3px solid red;
+  /* border-bottom: 5px double blue; */
+  border-radius: 15px;
+  border-bottom-left-radius: 15%;
+  box-shadow: 2px 2px 10px 1px rgba(255, 47, 47, 0.562);
+}
+
+.card:hover {
+  outline: 3px solid rgb(255, 0, 255);
+  outline-offset: 4px;
+
+  cursor: pointer;
+}
+
+.btn {
+  border-radius: 25px;
+}
+
+.btn:hover {
+  box-shadow: 2px 2px 10px 1px rgba(255, 47, 47, 0.562);
+}
+
+h1 {
+  text-shadow: 3px -3px 6px rgba(255, 0, 0, 0.61);
+}
+
+/* робота з обрізанням та перенесенням */
+
+/* .plans_card:nth-child(2)>.card {
+  background: rgba(255, 0, 255, 0.507);
+} */
+
+.plans_card:nth-child(2) {
+  /* display: none; */
+  visibility: hidden;
+}
+
+/* p {
+  background: #6C757D;
+  width: 300px;
+  height: 100px;
+
+  overflow: scroll;
+  overflow-x: hidden;
+ 
+  text-overflow: ellipsis;
+} */
+
+.hero_text {
+  background: #6C757D;
+
+  word-spacing: 10px;
+
+  overflow: auto;
+  resize: both;
+}
+
+.hero_title {
+  max-width: 660px;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  height: 65px;
+  overflow: hidden;
+  
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
 }
