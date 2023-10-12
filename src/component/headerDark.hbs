@@ -1,0 +1,65 @@
+{{!-- <header class="header"> --}}
+<div class="header">  
+  {{#with header}}
+  {{!-- <div class="row"> --}}
+    <a href="#test">
+      <div class="logo">
+        <span class="badge text-bg-primary">{{brandName}}</span>
+      </div>
+    </a>
+
+    <nav class="header_nav">
+      <div class="header_nav_right">
+        <div class="nav ">
+          {{#each links}}
+            <a href="{{url}}" class="nav_link">{{text}}</a>
+          {{/each}}
+        </div>
+      </div>
+    </nav>
+  {{!-- </div> --}}
+
+  {{!-- <div class="row"> --}}
+  {{!-- </div> --}}
+
+  {{/with}}
+</div>
+
+<div class="header2">  
+  {{#with header}}
+  {{!-- <div class="row"> --}}
+    <a href="#test">
+      <div class="logo2">
+        <span class="badge ">Ad</span>
+      </div>
+    </a>
+    <p class="ad">{{ad.text}}: {{ad.url}}</p>
+
+    {{!-- <nav class="header_nav">
+      <div class="header_nav_right">
+        <div class="nav ">
+          {{#each links}}
+            <a href="{{url}}" class="nav_link">{{text}}</a>
+          {{/each}}
+        </div>
+      </div>
+    </nav> --}}
+
+    <p class="nav_link">User Online: {{userOnline}}</p>
+ {{/with}}
+</div>
+
+<div class="logo2">
+  {{#with ad}}
+    <span class="badge ">Ad</span>
+    <p class="ad_text">{{text}}</p>
+    <a href="{{url}}" class="nav_link" >{{url}}</a>
+  {{/with}}
+
+  <div class="user_online">
+    <span class="user_on">User Online: </span>{{userOnline}}
+  </div>
+
+
+</div>
+{{!-- </header> --}}

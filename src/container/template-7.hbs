@@ -1,0 +1,115 @@
+<header class="header1">
+  {{!-- <div class="">
+    {{> logo}}   
+  </div> --}}
+  {{!-- <a href="#test"> --}}
+    {{> headerDark}}  
+
+    {{!-- <div class="logo">
+      <span class="badge text-bg-primary">D</span>
+    </div> --}}
+
+  {{!-- </a>
+
+  <nav class="header_nav">
+    <div class="header_nav_right">
+      {{> nav7 list=header}} --}}
+      {{!-- <div class="nav {{#if isVertical}}nav_vertical{{else}}nav_inline{{/if}}">
+        {{#each list}}
+          <a href="{{url}}" class="nav_link">{{text}}</a>
+        {{/each}}
+      </div> --}}
+    {{!-- </div>
+  </nav> --}}
+</header>
+
+<main class="main">
+  {{#with hero}}
+      <div class="messages">
+        <h1 class="messages_title">{{title}}</h1>
+        <p class="advantages">{{description}}</p>
+          {{#with button}}
+          <a href="{{url}}" class="button " >{{text}}</a>
+        {{/with}}
+      </div>
+  {{/with}}
+
+  
+  {{#with form}}
+    <div class="form">
+      <h2 class="form_title">{{title}}</h2>
+      
+      <div class="form_input_list">
+        {{#each inputs}}
+          <input type="{{type}}" placeholder="{{placeholder}}" class="form_input" name="{{name}}" id="form-input-{{id}}" />
+        {{/each}}
+      </div>
+
+      <div class="form_checkbox">
+        <input type="checkbox" name="checkbox.name" id="checkbox.name"/>
+        <div></div>
+        <label for="checkbox.name" >{{checkbox.label}}</label>
+      </div>
+
+      <button type="submit" class="form_button">{{button}}</button>
+      <p class="form_info">{{info}}</p>
+    </div>
+  {{/with}}
+</main>
+
+  {{#with updates}}
+    <div class="updates">
+      <h2 class="upd_title">{{title}}</h2>
+       {{#each list}}
+          <div class="msg1">
+            <strong class="msg_name1">{{nickname}}</strong>
+            <p class="msg_text1">{{description}}</p>
+            {{!-- <span class="msg_day">{{day}}</span> --}}
+          </div>
+        {{/each}}
+        
+        <a href="{{show_all.url}}" class="messages_link">{{show_all.text}}</a>
+      
+    </div>
+  {{/with}}
+
+  <div class="about">
+    {{#with about}}
+      <div class="about_heading">
+        <h3 class="about_title">{{heading}}</h3>
+        <p class="about_info">{{info}}</p>
+      </div>
+      
+      {{!-- <div class="main1">
+        {{#each list}}
+          <div class="msg">
+            <strong class="msg_name">{{name}}</strong>
+            <p class="msg_text">{{details}}</p>
+          </div>
+        {{/each}}
+      </div> --}}
+           
+    {{/with}}
+  </div>
+
+<div class="blog">
+  {{#each articles}}
+    {{>articleCardDark data=this}}
+  {{/each}} 
+</div>
+
+{{!-- <div class="articles">
+  {{#each articles}}
+    <div class="block">
+      
+      <strong>{{title}}</strong>
+      <p>{{text}}</p>
+    </div>
+  {{/each}}
+</div> --}}
+
+<futer class="footer" id="test">
+  {{#with footer}}
+      {{> footerDark}}
+  {{/with}}
+</futer>  
